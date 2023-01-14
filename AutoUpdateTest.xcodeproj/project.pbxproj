@@ -11,6 +11,7 @@
 		CAC53AD42972695B0096652D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC53AD32972695B0096652D /* ContentView.swift */; };
 		CAC53AD62972695B0096652D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC53AD52972695B0096652D /* Assets.xcassets */; };
 		CAC53AD92972695B0096652D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC53AD82972695B0096652D /* Preview Assets.xcassets */; };
+		CAC53AE229726C150096652D /* AppUpdater in Frameworks */ = {isa = PBXBuildFile; productRef = CAC53AE129726C150096652D /* AppUpdater */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC53AE229726C150096652D /* AppUpdater in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = AutoUpdateTest;
+			packageProductDependencies = (
+				CAC53AE129726C150096652D /* AppUpdater */,
+			);
 			productName = AutoUpdateTest;
 			productReference = CAC53ACE2972695B0096652D /* AutoUpdateTest.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = CAC53AC52972695A0096652D;
+			packageReferences = (
+				CAC53AE029726C150096652D /* XCRemoteSwiftPackageReference "AppUpdater" */,
+			);
 			productRefGroup = CAC53ACF2972695B0096652D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAC53AE029726C150096652D /* XCRemoteSwiftPackageReference "AppUpdater" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/AppUpdater.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAC53AE129726C150096652D /* AppUpdater */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAC53AE029726C150096652D /* XCRemoteSwiftPackageReference "AppUpdater" */;
+			productName = AppUpdater;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CAC53AC62972695A0096652D /* Project object */;
 }

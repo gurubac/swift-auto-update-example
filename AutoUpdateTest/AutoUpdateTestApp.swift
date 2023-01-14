@@ -37,12 +37,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // show alert for this error
         print("some error")
         print(error)
-          let errorMessage = "Error: \(error.localizedDescription)"
-          let alert = NSAlert()
-          alert.messageText = "Update Error"
-          alert.informativeText = errorMessage
-          alert.addButton(withTitle: "OK")
-          alert.runModal()
+        let errorMessage = "Error: \(error.localizedDescription)"
+        let alert = NSAlert()
+        alert.messageText = "Update Error"
+        alert.informativeText = errorMessage
+        alert.addButton(withTitle: "OK")
+        alert.runModal()
       }
     }
   }

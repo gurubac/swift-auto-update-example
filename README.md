@@ -3,6 +3,7 @@ A quick example app made for testing Max Howell's automatic AppUpdater for Swift
 
 ![image](https://user-images.githubusercontent.com/59124862/212463701-2d328ecf-dadd-465f-8495-d6a5bfe3b591.png)
 
+Dependencies:
 Max's AppUpdater https://github.com/mxcl/AppUpdater
 
 My release repo (source of the app releases) that is used in this app https://github.com/gurubac/releasetest/releases

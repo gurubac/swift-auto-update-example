@@ -12,6 +12,6 @@ Quick tips:
 
 Tagname of release should be in this format - ```1.3.0```
 
-Important: Compress your .app file into a zip, upload as name reponame-semanticVersion for example ```releasetest-1.3.0```
+Important: Compress your .app file into a zip, upload as reponame-semanticVersion for example ```releasetest-1.3.0```
 
 If you upload a dmg instead, the AppUpdater code will fail at the ```compactMap { downloadedAppBundle in Bundle(url: downloadedAppBundle)``` step. 
